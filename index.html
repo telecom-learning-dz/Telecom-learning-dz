@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telecom Learn DZ</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>مرحبا بك في Telecom Learn DZ</h1>
+    <p>اختر المستوى:</p>
+    <select id="niveau">
+      <option value="L1">L1</option>
+      <option value="L2">L2</option>
+      <option value="L3">L3</option>
+      <option value="M1">M1</option>
+      <option value="M2">M2</option>
+    </select>
+    <p>اختر اللغة:</p>
+    <select id="langue">
+      <option value="ar">العربية</option>
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+    <button onclick="showExample()">عرض مثال</button>
+    <div id="example" class="example-box" style="display:none;">
+      <p>ما هو مبدأ عمل الترانزستور؟</p>
+      <button onclick="checkAnswer(true)">توصيل الإشارة</button>
+      <button onclick="checkAnswer(false)">زيادة المقاومة</button>
+    </div>
+  </div>
+  <audio id="correct" src="correct.mp3"></audio>
+  <audio id="wrong" src="wrong.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
